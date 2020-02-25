@@ -3,13 +3,13 @@ import logo from './logo.svg';
 import Title from "./components/Title";
 import Wrapper from "./components/Wrapper";
 import ImageCard from "./components/ImageCard";
-import cardImage from "./ cardImage.json";
+import cardImage from "./cardImage.json";
 import "./index.css";
 import './App.css';
 
 var correctPick = 0;
 var bestScore = 0;
-var notification = "Select a card below to reveal a SEC team logo. Keep picking cards until you reveal the original logo";
+var notification = "Select a card below to reveal a SEC team logo. Keep picking cards trying not to reveal the original logo";
 
 class App extends Component {
   state = {
@@ -85,7 +85,7 @@ class App extends Component {
 
         <div className="container">
           <div className="row">
-            this.state.cardImage.map(inage => (
+           {this.state.cardImage.map(image => (
           <ImageCard
               updatePicked={this.updatePicked}
               id={image.id}
