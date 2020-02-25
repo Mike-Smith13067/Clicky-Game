@@ -1,0 +1,74 @@
+[{
+    "id": 1,
+    "image": "./public/images/Arkansas.jpg",
+    "clicked": false
+},
+
+{
+    "id": 2,
+    "image": "./public/images/Auburn.jpg",
+    "clicked": false
+},
+
+{
+    "id": 3,
+    "image": "./public/images/Bama.jpg",
+    "clicked": false
+},
+
+{
+    "id": 4,
+    "image": "./public/images/Georgia.jpg",
+    "clicked": false
+},
+
+{
+    "id": 5,
+    "image": "./public/images/Kentucky.jpg",
+    "clicked": false
+},
+
+{
+    "id": 6,
+    "image": "./public/images/Missouri.jpg",
+    "clicked": false
+},
+
+{
+    "id": 7,
+    "image": "./public/images/MissState.jpg",
+    "clicked": false
+},
+
+{
+    "id": 8,
+    "image": "./public/images/OleMiss.jpg",
+    "clicked": false
+},
+
+{
+    "id": 9,
+    "image": "./public/images/SC.jpg",
+    "clicked": false
+},
+
+{
+    "id": 10,
+    "image": "./public/images/TAMU.jpg",
+    "clicked": false
+},
+
+{
+    "id": 11,
+    "image": "./public/images/Tennesse.jpg",
+    "clicked": false
+},
+
+{
+    "id": 12,
+    "image": "./public/images/Vandy.jpg",
+    "clicked": false
+}
+
+
+]
