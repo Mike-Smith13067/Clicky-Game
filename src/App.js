@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Title from "./components/Title";
 import Wrapper from "./components/Wrapper";
 import ImageCard from "./components/ImageCard";
 import cardImage from "./ cardImage.json";
@@ -74,7 +75,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Card Clicky Game (SEC version)</Title>
+        <Title>Card Clicky Game **SEC version **</Title>
         <h2 className="headerNotification">{this.state.notification}</h2>
         <div className="container score">
           <h3>Correct Picks: {this.state.correctPicks}
@@ -92,11 +93,11 @@ class App extends Component {
               image={image.image}
             />
             ))}
-      </div>
+          </div>
         </div>
       </Wrapper>
     );
   }
 }
 
-  export default App;
+export default App;
