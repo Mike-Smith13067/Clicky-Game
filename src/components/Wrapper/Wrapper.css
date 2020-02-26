@@ -8,17 +8,23 @@
     justify-content: space-around;
     align-content: flex-start;
     overflow: auto;
-    background-color: black;
-    color: white;
+    background-color: lightcyan;
+    color: black;
     
     
   }
   
  .container {
      text-align: center;
+     width: 100%;
      
  }
 
- .score-container {
+ .score {
     font-family: 'Righteous' ;
+    color: black;
+ }
+
+ .headerNotification {
+     color: black;
  }

@@ -1,23 +1,14 @@
-.logo-image {
-    margin-bottom: 20px;
+.logo {
+    height: 200px;
+    width: 180px;
    
     
 }
-img {
-    border: 2px solid white;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-}
-
-.zoom {
-    transition: transform .2s; 
-  }
-
-  .zoom:hover {
-    transform: scale(1.1);
-  }
-
 .img-container {
-    background-color: black;
-    margin-top: 40px;
+    margin: 15px;
+    border: 2px solid black;
+    height: 200px;
+    width: 180px;
 }
+
 

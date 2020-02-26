@@ -1,12 +1,17 @@
 import React from "react";
 import "./ImageCard.css";
+import cardImage from "../../cardImage.json";
 
-const ImageCard = props => (
-    <div onClick={() => props.updateClicked(props.id)} className="col-md-3 logo-image zoom">
-        <div className="img-container">
-            <img alt={props.name} src={props.image} />
+console.log(cardImage);
+
+const ImageCard = props => {
+    return (
+    <div onCLick = {() => props.clicked(props.id)} className = "row img-container">
+        <div className = "logo">
+        <img src={props.image} alt={""}/> 
         </div>
     </div>
-)
-
-export default ImageCard;
+);
+}
+  
+  export default ImageCard;

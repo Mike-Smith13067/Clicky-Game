@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Title from "./components/Title";
 import Wrapper from "./components/Wrapper";
 import ImageCard from "./components/ImageCard";
@@ -10,41 +9,59 @@ import './App.css';
 var correctPick = 0;
 var bestScore = 0;
 var notification = "Select a card below to reveal a SEC team logo. Keep picking cards trying not to reveal the original logo";
+console.log (cardImage);
 
-class App extends Component {
-  state = {
-    cardImage,
-    correctPick,
-    bestScore,
-    notification
+//Randomize images
+ function shuffle(cardImage) {
+   var currentIndex = cardImage.length, temporaryValue, randomIndex;
+   while (0 !==currentIndex) {
+     randomIndex = Math.floor(Math.random() * currentIndex);
+     currentIndex -= 1;
 
-  };
+     temporaryValue = cardImage[currentIndex];
+     cardImage[currentIndex] = cardImage[randomIndex];
+     cardImage[randomIndex] = temporaryValue;
+   }
 
-  randomImages = cardImage => {
-    cardImage.sort((a, b) => {
-      return 0.5 - Math.random();
-    });
-  };
-  // Picking the original logo
+   return cardImage;
+  }
+
+  class App extends Component {
+    state = {
+      cardImage,
+      correctPick,
+      bestScore,
+      notification,
+      clickedLogos: []
+  
+    };
+//Randomize Cards
+    random= () => {
+      let randomImages = shuffle(cardImage);
+      this.setState({ cardImage})
+      return randomImages;
+    }
+    
+ 
+  // Clicking a logo
   updatePicked = id => {
     const cardImage = this.state.cardImage;
     const pickedImage = cardImage.filter(cardImage => cardImage.id === id);
 
     if (pickedImage[0].clicked) {
       correctPick = 0;
-      notification = "Opps!! You already clicked that one. Try again?"
-      this.randomImages(cardImage);
-
-      cardImage.forEaach(image => cardImage.clicked = false);
-
+      notification = "Opps!! You already clicked that one. Try again?";
+      cardImage.map(cardImage => cardImage.clicked =false);
       this.setState({ notification });
       this.setState({ correctPick });
       this.setState({ cardImage });
-    }
+    
+      // Randomize
+    cardImage.sort(function (a, b) { return .5-Math.random() });
 
-    // Picking anycard other than original logo
+    //Correct Pick
 
-    else if (correctPick < 11) {
+    } else if (correctPick < 11) {
       pickedImage[0].clicked = true;
       correctPick++;
 
@@ -54,21 +71,27 @@ class App extends Component {
         bestScore = correctPick;
         this.setState({ bestScore });
       }
-
-      this.randomImages(cardImage);
       this.setState({ notification });
       this.setState({ correctPick });
-      this.setState({ cardImage });
-    }
+      this.setState({ cardImage })
 
-    // Perfect game
+    cardImage.sort(function (a, b) { return .5-Math.random() });
 
-    else {
+    //Perfect Game
+
+  }else {
       pickedImage[0] = true;
       correctPick = 0
       notification = "Well Done!! Perfect Game!!";
       bestScore = 12;
       this.setState({ bestScore });
+
+      cardImage.map(cardImage => cardImage.clicked = false);
+      this.setState({cardImage});
+      this.setState({correctPick});
+      this.setState({notification})
+
+      cardImage.sort(function (a, b) { return .5-Math.random() });
     }
   };
 
@@ -78,14 +101,14 @@ class App extends Component {
         <Title>Card Clicky Game **SEC version **</Title>
         <h2 className="headerNotification">{this.state.notification}</h2>
         <div className="container score">
-          <h3>Correct Picks: {this.state.correctPicks}
+          <h3>Correct Picks: {this.state.correctPick}
             <br /> Best Score: {this.state.bestScore}
           </h3>
         </div>
 
         <div className="container">
           <div className="row">
-           {this.state.cardImage.map(image => (
+           {cardImage.map(image => (
           <ImageCard
               updatePicked={this.updatePicked}
               id={image.id}
