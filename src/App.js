@@ -39,6 +39,7 @@ console.log (cardImage);
     random= () => {
       let randomImages = shuffle(cardImage);
       this.setState({ cardImage})
+      console.log(cardImage);
       return randomImages;
     }
     
