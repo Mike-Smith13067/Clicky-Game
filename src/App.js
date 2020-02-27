@@ -11,20 +11,7 @@ var bestScore = 0;
 var notification = "Select a card below to reveal a SEC team logo. Keep picking cards trying not to reveal the original logo";
 console.log (cardImage);
 
-//Randomize images
- function shuffle(cardImage) {
-   var currentIndex = cardImage.length, temporaryValue, randomIndex;
-   while (0 !==currentIndex) {
-     randomIndex = Math.floor(Math.random() * currentIndex);
-     currentIndex -= 1;
 
-     temporaryValue = cardImage[currentIndex];
-     cardImage[currentIndex] = cardImage[randomIndex];
-     cardImage[randomIndex] = temporaryValue;
-   }
-
-   return cardImage;
-  }
 
   class App extends Component {
     state = {
@@ -32,20 +19,11 @@ console.log (cardImage);
       correctPick,
       bestScore,
       notification,
-      clickedLogos: []
   
-    };
-//Randomize Cards
-    random= () => {
-      let randomImages = shuffle(cardImage);
-      this.setState({ cardImage})
-      console.log(cardImage);
-      return randomImages;
-    }
-    
+    }; 
  
   // Clicking a logo
-  updatePicked = id => {
+  clickedLogos = id => {
     const cardImage = this.state.cardImage;
     const pickedImage = cardImage.filter(cardImage => cardImage.id === id);
 
@@ -115,6 +93,7 @@ console.log (cardImage);
               id={image.id}
               key={image.id}
               image={image.image}
+              clickedLogos = {this.clickedLogos}
             />
             ))}
           </div>
@@ -123,5 +102,26 @@ console.log (cardImage);
     );
   }
 }
-
+console.log(cardImage);
 export default App;
+
+    // //Randomize images
+    // function shuffle(cardImage) {
+    //   var currentIndex = cardImage.length, temporaryValue, randomIndex;
+    //   while (0 !==currentIndex) {
+    //     randomIndex = Math.floor(Math.random() * currentIndex);
+    //     currentIndex -= 1;
+    
+    //     temporaryValue = cardImage[currentIndex];
+    //     cardImage[currentIndex] = cardImage[randomIndex];
+    //     cardImage[randomIndex] = temporaryValue;
+    //   }
+    //  }
+    // //Randomize Cards
+    //     randomArray= () => {
+    //       let randomImages = shuffle(cardImage);
+    //       this.setState({ cardImage})
+          
+    //       return randomImages;
+         
+    //     }
