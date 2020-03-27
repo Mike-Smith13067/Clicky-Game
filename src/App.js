@@ -105,23 +105,3 @@ console.log (cardImage);
 console.log(cardImage);
 export default App;
 
-    // //Randomize images
-    // function shuffle(cardImage) {
-    //   var currentIndex = cardImage.length, temporaryValue, randomIndex;
-    //   while (0 !==currentIndex) {
-    //     randomIndex = Math.floor(Math.random() * currentIndex);
-    //     currentIndex -= 1;
-    
-    //     temporaryValue = cardImage[currentIndex];
-    //     cardImage[currentIndex] = cardImage[randomIndex];
-    //     cardImage[randomIndex] = temporaryValue;
-    //   }
-    //  }
-    // //Randomize Cards
-    //     randomArray= () => {
-    //       let randomImages = shuffle(cardImage);
-    //       this.setState({ cardImage})
-          
-    //       return randomImages;
-         
-    //     }

@@ -5,7 +5,7 @@ const ImageCard = props => {
     return (
     <div onClick = {() => props.clickedLogos(props.id)} className = " img-container">
         <div className = "logo">
-        <img src={props.image} alt={"public/images/SEC.jpg"}/> 
+        <img src={props.image} alt={"/src/images/SEC.jpg"}/> 
         </div>
     </div>
     
