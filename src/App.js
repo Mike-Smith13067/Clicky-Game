@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Title from "./components/Title/index";
+import Title from "./components/Title/";
 import Wrapper from "./components/Wrapper/index";
 import ImageCard from "./components/ImageCard";
-import cardImage from "./cardImage.js";
+import cardImage from "./cardImage.json";
 import "./index.css";
 import './App.css';
 
