@@ -89,7 +89,6 @@ console.log (cardImage);
           <div className="row">
            {cardImage.map(image => (
           <ImageCard
-              updatePicked={this.updatePicked}
               id={image.id}
               key={image.id}
               image={image.image}

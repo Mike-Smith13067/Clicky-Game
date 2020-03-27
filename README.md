@@ -9,6 +9,8 @@ Clicking the original logo will end the game.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Deployed on Github: https://mike-smith13067.github.io/Clicky-Game/
+netlify:: https://dreamy-wilson-97bdee.netlify.com/ (doesnt work) issue with the manifest json file.
+Heroku: wouldnt deploy.
 
 Technologies used:
 React
