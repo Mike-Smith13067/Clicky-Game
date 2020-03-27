@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Title from "./components/Title2";
+import Title from "./components/Title";
 import Wrapper from "./components/Wrapper/index";
 import ImageCard from "./components/ImageCard";
 import cardImage from "./cardImage.json";
