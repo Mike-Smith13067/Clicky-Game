@@ -1,7 +1,7 @@
 Clicky Game
 
 Overview:
-This app will display the 12 team logos of the Southeastern Conference. 
+This app will display the 13 team logos of the Southeastern Conference. 
 Clicking on a logo will mark it and then re-render the page with the logo positions randomized.
 Clicking a different logo will score a point which is tracked on screen.
 Clicking the original logo will end the game.
