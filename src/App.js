@@ -101,6 +101,5 @@ console.log (cardImage);
     );
   }
 }
-console.log(cardImage);
 export default App;
 
