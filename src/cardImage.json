@@ -1,73 +1,73 @@
 [
 {
     "id": 1,
-    "image": "./clicky-game/images/Arkansas.jpg",
+    "image": "./images/Arkansas.jpg",
     "clicked": false
 },
 
 {
     "id": 2,
-    "image": "./clicky-game/images/Auburn.jpg",
+    "image": "./images/Auburn.jpg",
     "clicked": false
 },
 
 {
     "id": 3,
-    "image": "./clicky-game/images/Bama.jpg",
+    "image": "./images/Bama.jpg",
     "clicked": false
 },
 
 {
     "id": 4,
-    "image": "./clicky-game/images/Georgia.jpg",
+    "image": "./images/Georgia.jpg",
     "clicked": false
 },
 
 {
     "id": 5,
-    "image": "./clicky-game/images/Kentucky.jpg",
+    "image": "./images/Kentucky.jpg",
     "clicked": false
 },
 
 {
     "id": 6,
-    "image": "./clicky-game/images/Missouri.jpg",
+    "image": "./images/Missouri.jpg",
+    "clicked": false
+},
+
+{
+    "id": 7,
+    "image": "./images/MissState.jpg",
     "clicked": false
 },
 
 {
     "id": 8,
-    "image": "./clicky-game/images/OleMiss.jpg",
+    "image": "./images/OleMiss.jpg",
     "clicked": false
 },
 
 {
     "id": 9,
-    "image": "./clicky-game/images/SC.jpg",
+    "image": "./images/SC.jpg",
     "clicked": false
 },
 
 {
     "id": 10,
-    "image": "./clicky-game/images/TAMU.jpg",
+    "image": "./images/TAMU.jpg",
     "clicked": false
 },
 
 {
     "id": 11,
-    "image": "./clicky-game/images/Tennesse.jpg",
+    "image": "./images/Tennesse.jpg",
     "clicked": false
 },
 
 {
     "id": 12,
-    "image": "./clicky-game/images/Vandy.jpg",
-    "clicked": false
-},
-
-{
-    "id": 13,
-    "image": "./clicky-game/images/lsu.jpg",
+    "image": "./images/Vandy.jpg",
     "clicked": false
 }
 
