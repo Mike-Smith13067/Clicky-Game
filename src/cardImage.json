@@ -36,12 +36,6 @@
 },
 
 {
-    "id": 7,
-    "image": "./clicky-game/images/Missstate.jpg",
-    "clicked": false
-},
-
-{
     "id": 8,
     "image": "./clicky-game/images/OleMiss.jpg",
     "clicked": false
