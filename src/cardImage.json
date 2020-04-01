@@ -36,12 +36,6 @@
 },
 
 {
-    "id": 7,
-    "image": "./images/MissState.jpg",
-    "clicked": false
-},
-
-{
     "id": 8,
     "image": "./images/OleMiss.jpg",
     "clicked": false
