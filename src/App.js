@@ -40,7 +40,7 @@ console.log (cardImage);
 
     //Correct Pick
 
-    } else if (correctPick < 11) {
+    } else if (correctPick < 12) {
       pickedImage[0].clicked = true;
       correctPick++;
 
@@ -62,7 +62,7 @@ console.log (cardImage);
       pickedImage[0] = true;
       correctPick = 0
       notification = "Well Done!! Perfect Game!!";
-      bestScore = 12;
+      bestScore = 13;
       this.setState({ bestScore });
 
       cardImage.map(cardImage => cardImage.clicked = false);
